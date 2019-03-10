@@ -1,0 +1,69 @@
+<div class="row">
+    <div class="col s6">
+      <div class="card-header">
+        <div class="card-image">
+          <img src="">
+        </div>
+        <div class="card-body">
+          <h6>Some burgers to choose:</h6>
+          <hr>
+          <ul>
+            {{#each burgers}}
+              {{#unless this.devoured}}
+                <li> 
+                  <span>
+                    <span id = "burger_name">{{this.burger_name}}</span>
+                      <div>
+                        {{> burgers/menuBurgers}}
+                        {{> burgers/deleteBurger}}
+                      </div>
+                  </span> 
+                </li>
+              {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <div class="col s6">
+    <div class="card-header">
+      <div class="card-image">
+        <img src="">
+      </div>
+      <div class="card-body">
+        <h6>Devoured Burgers:</h6>
+        <hr>
+        <ul>
+          {{#each burgers}}
+            {{#if this.devoured}}
+              <li> 
+                <span>
+                  {{this.burger_name}}
+                    <div>
+                      {{> burgers/deleteBurger}}
+                      {{> burgers/cook}}
+                    </div>
+                </span> 
+              </li>
+            {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+    <div class="col align-self-center bg-secondary text-center">
+      <h6><span class="align-middle text-light">Add a Burger</span></h6>
+      <form class="create-update-form" action="/" method="POST">
+        <div class="form-group">
+          <label for="burger"><span class="text-white">Burger description:</span></label>
+          <input type="text" id="addBurger" name="burger_name" class="" >
+          <button type="submit" class=" btn btn-success">Add Burger!</button>
+        </div>
+      </form>
+</div>
+</div>

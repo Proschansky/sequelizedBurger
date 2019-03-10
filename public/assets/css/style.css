@@ -1,0 +1,23 @@
+#burger_name {
+  font-family: 'Permanent Marker', cursive;
+}
+.jumbotron {
+  font-family: 'Permanent Marker', 'cursive';
+  font-weight: bold
+}
+
+.btn {
+  margin: 10px auto;
+}
+
+ul > li {
+  list-style-type: none;
+  font-size: 1.4em;
+  font-weight: 900;
+  LINE-HEIGHT: 1;
+  PADDING-BOTTOM: 20PX;
+}
+
+.row .col.offset-s4 {
+  position: absolute;
+}

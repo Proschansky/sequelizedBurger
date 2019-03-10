@@ -1,0 +1,28 @@
+{
+  "name": "Meburger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" ",
+    "start": "node server.js, nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Proschansky/burger"
+  },
+  "author": "Sam Proschansky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Proschansky/burger"
+  },
+  "homepage": "https://github.com/Proschansky/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "dotenv": "^6.2.0",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.9",
+    "mysql": "^2.14.1"
+  }
+}
