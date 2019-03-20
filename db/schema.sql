@@ -1,5 +1,5 @@
-CREATE DATABASE burger_db;
-USE burger_db;
+CREATE DATABASE sequelizedBurger;
+USE sequelizedBurger;
 
 CREATE TABLE burgers
 (
