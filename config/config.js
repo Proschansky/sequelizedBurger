@@ -8,7 +8,7 @@ module.exports = {
     "host": process.env.HOST,
     "port": 3306,
     "dialect": "mysql",
-    "use_env_variable": process.env.VARIABLE
+    "use_env_variable": process.env.JAWS_DB_URL
   },
   "test": {
       "username": process.env.USER,
@@ -17,7 +17,7 @@ module.exports = {
       "host": process.env.HOST,
       "port": 3306,
       "dialect": "mysql",
-      "use_env_variable": process.env.VARIABLE
+      "use_env_variable": process.env.JAWS_DB_URL
     },
 "production": {
   "username": process.env.USER,
@@ -26,6 +26,6 @@ module.exports = {
   "host": process.env.HOST,
   "port": 3306,
   "dialect": "mysql",
-  "use_env_variable": process.env.VARIABLE
+  "use_env_variable": process.env.JAWS_DB_URL
 }
 }
