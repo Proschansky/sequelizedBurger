@@ -9,20 +9,18 @@ module.exports = {
     "port": 3306,
     "dialect": "mysql"
   },
-  "test":{
-    "username": process.env.name,
-    "password": process.env.password,
-    "database": process.env.database,
-    "host": process.env.host,
-    "port": 3306,
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
     "dialect": "mysql"
-  },
-  "production": {
-    "username": process.env.name,
-    "password": process.env.password,
-    "database": process.env.database,
-    "host": process.env.host,
-    "port": 3306,
+},
+"production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
     "dialect": "mysql"
-  },
+}
 }

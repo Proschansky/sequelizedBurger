@@ -8,16 +8,12 @@ $(function() {
   $(".devour").on("click", function() {
     var id = $(this).attr("data-burger");
     console.log(id);
-    var eaten = {
-      devoured: true
-    };
 
     // Send the PUT request.
     $.ajax("/" + id, {
       type: "PUT",
-      data: eaten
     }).then(
-      function(result) {
+      function() {
         console.log("This burger has been devoured");
         location.reload();
       }
