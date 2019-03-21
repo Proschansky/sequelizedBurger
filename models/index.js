@@ -9,10 +9,10 @@ var config = require(__dirname + '/../config/config.js')[env];
 var db = {};
 
 if (config.use_env_variable) {
-  console.log('Hello')
+  console.log('Using production')
 	var sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {
-  console.log('Goodbye')
+  console.log('Using local')
 	var sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
