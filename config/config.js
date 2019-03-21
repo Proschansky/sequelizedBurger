@@ -7,7 +7,8 @@ module.exports = {
     "database": process.env.DATABASE,
     "host": process.env.HOST,
     "port": 3306,
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "use_env_variable": process.env.VARIABLE
   },
   "test": {
       "username": process.env.USER,
@@ -15,7 +16,8 @@ module.exports = {
       "database": process.env.DATABASE,
       "host": process.env.HOST,
       "port": 3306,
-      "dialect": "mysql"
+      "dialect": "mysql",
+      "use_env_variable": process.env.VARIABLE
     },
 "production": {
   "username": process.env.USER,
@@ -23,6 +25,7 @@ module.exports = {
   "database": process.env.DATABASE,
   "host": process.env.HOST,
   "port": 3306,
-  "dialect": "mysql"
+  "dialect": "mysql",
+  "use_env_variable": process.env.VARIABLE
 }
 }
