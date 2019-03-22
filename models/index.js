@@ -9,7 +9,7 @@ var config = require(__dirname + '/../config/config.js')[env];
 var db = {};
 
 
-
+console.log(config.database, config.username, config.password, config.host, config.port)
 
 var sequelize = new Sequelize(
 	config.database, 
