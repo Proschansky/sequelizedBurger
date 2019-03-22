@@ -9,7 +9,18 @@ var config = require(__dirname + '/../config/config.js')[env];
 var db = {};
 
 
-var sequelize = new Sequelize(config.database, config.username, config.password, config);
+
+
+var sequelize = new Sequelize(
+	config.database, 
+	config.username, 
+	config.password, 
+	{
+		dialect: "mysql",
+		host: config.host,
+		port: config.port
+	}
+);
 
 fs.readdirSync(__dirname)
 	.filter(function(file) {
