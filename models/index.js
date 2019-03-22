@@ -10,6 +10,8 @@ var db = {};
 
 if (config.use_env_variable) {
   console.log('Using production')
+  console.log(config.use_env_variable);
+  console.log(process.env);
 	var sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {
   console.log('Using local')
