@@ -12,7 +12,7 @@ if (config.use_env_variable) {
   console.log('Using production')
   console.log(config.use_env_variable);
   console.log(process.env);
-	var sequelize = new Sequelize(process.env[config.use_env_variable]);
+	var sequelize = new Sequelize(process.env[config.use_env_variable], {dialect: "mysql"});
 } else {
   console.log('Using local')
 	var sequelize = new Sequelize(config.database, config.username, config.password, config);
